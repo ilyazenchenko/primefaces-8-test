@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <title>PrimeFaces Test</title>
+        <h:outputScript name="test.js" />
+    </h:head>
+    <h:body>
+
+        <p:tabView id="tab-cur">
+
+        <p:tab id="tab-swift-mx-cur" title="Coообщение MX">
+            <h:panelGroup id="swiftmx-panel-group">
+                <ui:include src="/modules/swiftMX/swiftMX.xhtml">
+                    <ui:param name="heightSwiftMX" value="730px" />
+                </ui:include>
+            </h:panelGroup>
+        </p:tab>
+    </p:tabView>
+
+    </h:body>
+</html>
